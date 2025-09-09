@@ -19,6 +19,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
+
+Route::get('/about', function () {
     return view('home');
+});
+
+Route::get('/contact', function () {
+    return 'Contact Page';
 });

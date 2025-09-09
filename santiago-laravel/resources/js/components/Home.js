@@ -5,3 +5,6 @@ export default function Home() {
     <div>Home</div>
   )
 }
+if (document.getElementById('home')) {
+    ReactDOM.render(<Home />, document.getElementById('home'));
+}

@@ -20,9 +20,14 @@
             }
         </style>
     </head>
-    <body class="antialiased">
-        <div>
-            <h1>Welcome to Santiago!</h1>
-        </div>
-    </body>
+    <body class="antialiased bg-gray-100">
+    <nav class="bg-gray-900 p-4 text-white flex space-x-4">
+        <a href="/" class="hover:text-gray-300">Home</a>
+        <a href="/about" class="hover:text-gray-300">About</a>
+        <a href="/contact" class="hover:text-gray-300">Contact</a>
+    </nav>
+
+    <div class="p-6">
+        <h1 class="text-2xl font-bold">Welcome to Santiago!</h1>
+    </div>
 </html>

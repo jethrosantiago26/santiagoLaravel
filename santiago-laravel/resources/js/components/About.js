@@ -5,3 +5,6 @@ export default function About() {
     <div>About</div>
   )
 }
+if (document.getElementById('about')) {
+    ReactDOM.render(<About />, document.getElementById('about'));
+}

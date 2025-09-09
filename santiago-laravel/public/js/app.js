@@ -61940,6 +61940,9 @@ function Home() {
     children: "Home"
   });
 }
+if (document.getElementById('home')) {
+  ReactDOM.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Home, {}), document.getElementById('home'));
+}
 
 /***/ }),
 
