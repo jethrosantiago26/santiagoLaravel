@@ -12,9 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::get('/{any?}', function () {
-//     return view('welcome');
-// })->where('any', '^(?api).*$');
+Route::get('/{any}', function () {
+    return view('welcome');
+})->where('any', '.*');
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,3 +22,7 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+Route::view('/about', 'about');
+Route::view('/contact', 'contact');
+Route::get('/portfolio', 'PortfolioController@index');
+Route::post('/portfolio', 'PortfolioController@store');
